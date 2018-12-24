@@ -1,0 +1,41 @@
+<!--pages/index/index.wxml-->
+<image src="../../images/duoyun.jpg" class='bg'>
+<view class='container'>
+  <!-- 当前天气 -->
+  <view class='currentWeather'>
+    <view class='city w'>长沙 岳麓区</view>
+    <view class='tempDiv'>
+      <view class='temp w'>9</view>
+      <view class='temp1 w'>℃</view>
+    </view>
+    <view class="w">小雨|较舒适</view>
+  </view>
+  <!-- 天气详情 -->
+  <view class='weatherDetail'>
+    <view class='center'>
+      <view class='w'>西北风</view>
+      <view class='w b f50'>2级</view>
+    </view>
+    <view class="wline"></view>
+    <view class='center'>
+      <view class='w'>西北风</view>
+      <view class='w b f50'>2级</view>
+    </view>
+    <view class="wline"></view>
+    <view class='center'>
+      <view class='w'>西北风</view>
+      <view class='w b f50'>2级</view>
+    </view>
+  </view>
+</view>
+</image>
+
+<!-- 列表显示 -->
+<view wx:for="{{[1,2,3,4]}}" wx:key="this" wx:for-index="i" wx:for-item="item">
+  <view class="horizon forcast" style='font-size: 31rpx; '>
+    <view class='item_temp'>今天</view>
+    <view class='item_temp'>晴转多云</view>
+    <view class='item_temp'>9度</view>
+  </view>
+</view>
+
